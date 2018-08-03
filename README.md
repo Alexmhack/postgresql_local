@@ -63,3 +63,8 @@ a WHERE clause in our SELECT statement will get us the particular rows that fulf
 
 For e.g. : SELECT * FROM flights WHERE id = 3;
 For more select command look at select.sql file
+
+We can also use greater than and smaller than symbols to get more filtered data for e.g.
+SELECT * FROM flights WHERE duration > 500;
+
+For more specific where filtering we can use the AND keyword in the WHERE clauses.
