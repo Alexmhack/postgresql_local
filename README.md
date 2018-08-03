@@ -1,3 +1,6 @@
+# postgresql_local
+Installing PostgreSQL in our local computer and applying operations on it
+
 PostgreSQL is the server we are going to be working with.
 
 Just open any command prompt and enter > psql -U postgres
@@ -38,3 +41,7 @@ duration is the duration of a flight from origin to destination and this is a IN
 is like the other two values a NOT NULL value since a flight has to have a fixed duration.
 
 NOTE: \d is the command for getting the details of our table.
+
+# Inserting Into Table
+Inserting data into our table is just like creating except here we specify the values to be 
+inserted like the code in our file insert.sql
