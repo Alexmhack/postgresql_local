@@ -24,6 +24,10 @@ SELECT COUNT(*) FROM flights WHERE origin = 'Indore';
 
 SELECT MIN(duration) FROM flights;
 
+SELECT MAX(duration) FROM flights;
+
 SELECT * FROM flights WHERE duration = 120;
 
 SELECT * FROM flights WHERE origin IN ("Indore", "New York");
+
+SELECT * FROM flights WHERE origin LIKE '%a%';

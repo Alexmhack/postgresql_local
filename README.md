@@ -84,3 +84,16 @@ flight details which has the minimum duration.
 We can also specify the values from which we want our select query to search from,
 
 SELECT * FROM flights WHERE origin IN ('Indore', 'New York');
+
+We can also specify a substring to search for in our database field using special string denotion
+'%a%'
+
+SELECT * FROM flights WHERE origin LIKE '%a%';
+the query above will return all flights which has the letter 'a' in their origin.
+
+ id |  origin   | destination | duration
+----+-----------+-------------+----------
+  5 | Palo Alto | Sydney      |      600
+  6 | Mumbai    | Delhi       |      180
+  7 | Goa       | Canberra    |      300
+(3 rows)
