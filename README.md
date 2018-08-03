@@ -73,3 +73,10 @@ a clause with OR to fulfill either or both of the conditions.
 We can use the functions that PostgreSQL has like the AVG for getting the average of some field.
 
 SELECT AVG(duration) FROM flights;
+> 7 		means our flights table has 7 rows in total
+
+PostgreSQL also has COUNT function for counting the number of rows the database returned from a 
+query.
+
+We can also apply the MIN function to get the minimum of any value for example we can get the 
+flight details which has the minimum duration.

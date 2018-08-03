@@ -17,3 +17,11 @@ SELECT * FROM flights WHERE origin = 'Indore' OR duration > 500;
 SELECT AVG(duration) FROM flights;
 
 SELECT AVG(duration) FROM flights WHERE origin = 'Indore';
+
+SELECT COUNT(*) FROM flights;
+
+SELECT COUNT(*) FROM flights WHERE origin = 'Indore';
+
+SELECT MIN(duration) FROM flights;
+
+SELECT * FROM flights WHERE duration = 120;
