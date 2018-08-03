@@ -138,3 +138,10 @@ Whenever there is more information that our project needs to store we should hav
 table for it so here we don't wanna put our passengers in the flights table so we are creating
 another table with passengers having unique id, name and a flight in which they will travel so
 for that we are referencing our flights table id using keyword REFERENCES.
+
+Now if we want to know where is the person with name = 'Pranav' is going then I can run a query
+for getting the flight_id for the name = 'Pranav' and then search for that flight_id in the 
+flights table.
+
+# Joining tables
+We can join seperate tables on the basis of foreign key by using the keyword JOIN.

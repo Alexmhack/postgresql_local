@@ -49,3 +49,21 @@ SELECT origin, COUNT(*) FROM flights GROUP BY origin;
 SELECT origin, COUNT(*) FROM flights GROUP BY origin ORDER BY COUNT(*) ASC;
 
 SELECT origin, COUNT(*) FROM flights GROUP BY origin HAVING COUNT(*) > 1;
+
+SELECT * FROM passengers WHERE name='Pranav';
+
+SELECT * FROM flights WHERE id = 4;
+
+SELECT passengers.name, flights.origin, flights.destination, flights.duration
+	FROM passengers JOIN flights ON passengers.flight_id = flights.id;
+
+SELECT * FROM passengers JOIN flights ON passengers.flight_id = flights.id;
+
+SELECT name, origin, destination FROM flights 
+	JOIN passengers ON passengers.flight_id = flights.id;
+
+SELECT name, origin, destination FROM flights 
+	JOIN passengers ON passengers.flight_id = flights.id WHERE name = 'Pranav';
+
+SELECT name, origin, destination FROM flights 
+	JOIN passengers ON passengers.flight_id = flights.id ORDER BY duration;
