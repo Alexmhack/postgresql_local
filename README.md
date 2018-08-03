@@ -70,3 +70,6 @@ SELECT * FROM flights WHERE duration > 500;
 For more specific where filtering we can use the AND keyword in the WHERE clauses, or we can use
 a clause with OR to fulfill either or both of the conditions.
 
+We can use the functions that PostgreSQL has like the AVG for getting the average of some field.
+
+SELECT AVG(duration) FROM flights;
