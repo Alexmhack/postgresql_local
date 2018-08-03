@@ -97,3 +97,21 @@ the query above will return all flights which has the letter 'a' in their origin
   6 | Mumbai    | Delhi       |      180
   7 | Goa       | Canberra    |      300
 (3 rows)
+
+# Updating database
+For updating information in rows and columns of our database we have the keyword UPDATE and 
+since we won't update each and every row of our database we use WHERE to specify where we want
+our update query to be applied.
+
+UPDATE flights SET duration = 500 WHERE origin = 'Indore' AND destination = 'Kerela';
+
+The above query makes sense if our flights duration has been increased for a particular route so
+we can update the duration for all flights that follow that route.
+
+# Deleting rows in database
+DELETE is the keyword this particular query and since the deleted data cannot be restored we 
+should be very careful as to what we delete and should always check first by a SELECT query that 
+we are deleting the right data.
+
+DELETE FROM flights WHERE destination = 'Canberra';
+this will delete all rows that have its destination column with value 'Canberra';

@@ -31,3 +31,9 @@ SELECT * FROM flights WHERE duration = 120;
 SELECT * FROM flights WHERE origin IN ("Indore", "New York");
 
 SELECT * FROM flights WHERE origin LIKE '%a%';
+
+SELECT * FROM flights WHERE origin LIKE '%New%';
+
+UPDATE flights SET duration = 500 WHERE origin = 'Indore' AND destination = 'Kerela';
+
+DELETE FROM flights WHERE destination = 'Canberra';
