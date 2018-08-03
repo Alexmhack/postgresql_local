@@ -80,3 +80,7 @@ query.
 
 We can also apply the MIN function to get the minimum of any value for example we can get the 
 flight details which has the minimum duration.
+
+We can also specify the values from which we want our select query to search from,
+
+SELECT * FROM flights WHERE origin IN ('Indore', 'New York');
