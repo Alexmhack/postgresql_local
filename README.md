@@ -145,3 +145,15 @@ flights table.
 
 # Joining tables
 We can join seperate tables on the basis of foreign key by using the keyword JOIN.
+
+Since the flight_id is referencing to the id in the flights table so this is a good factor in 
+providing constraints in most cases for example if you delete a row in flights with id = 1;
+
+DELETE FROM flights WHERE id = 1;
+
+Above query cannot run because we have a passenger in the passengers table that has its flight_
+id = 1 which will violate our passengers flight.
+
+We can also perform an JOIN known as the LEFT JOIN which joins the left table to the right and 
+what this does is get all the data we need from the left table whether or not the data has any
+reference in the right table, which can give us some empty values as well.
