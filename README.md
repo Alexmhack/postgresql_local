@@ -114,4 +114,15 @@ should be very careful as to what we delete and should always check first by a S
 we are deleting the right data.
 
 DELETE FROM flights WHERE destination = 'Canberra';
+
 this will delete all rows that have its destination column with value 'Canberra';
+
+# Limited fetching of data
+SELECT * FROM flights LIMIT 2;
+
+above query will return only 2 to rows from the database.
+
+We can order our returned queryset by a particular column in our table for example in our 
+flights table we can get the flights in an ascending order by their duration.
+
+We can limit our queryset by saying give us the first 3 flights with least duration. 

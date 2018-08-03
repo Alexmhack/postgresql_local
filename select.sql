@@ -34,6 +34,12 @@ SELECT * FROM flights WHERE origin LIKE '%a%';
 
 SELECT * FROM flights WHERE origin LIKE '%New%';
 
-UPDATE flights SET duration = 500 WHERE origin = 'Indore' AND destination = 'Kerela';
+SELECT * FROM flights LIMIT 2;
 
-DELETE FROM flights WHERE destination = 'Canberra';
+SELECT * FROM flights ORDER BY duration ASC;
+
+SELECT * FROM flights ORDER BY duration ASC LIMIT 2;
+
+SELECT * FROM flights ORDER BY duration DESC;
+
+SELECT * FROM flights ORDER BY duration DESC LIMIT 2;
