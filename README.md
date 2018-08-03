@@ -56,3 +56,10 @@ NOTE: don't forget the semicolon at the end of the command.
 Basically it is very rare to get all the data stored in our database at once instead we want some
 filtered data and for that we can specify what we want when executing the SELECT statement, look 
 at the select.sql for more info.
+
+# Conditional Selection
+Adding * in the SELECT statement will get us all the data from each column and row whereas adding 
+a WHERE clause in our SELECT statement will get us the particular rows that fulfill our condition
+
+For e.g. : SELECT * FROM flights WHERE id = 3;
+For more select command look at select.sql file
