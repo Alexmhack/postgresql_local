@@ -132,3 +132,9 @@ Here we say to group by origin which means that all the rows from one origin wil
 together and so on.
 
 HAVING is same like WHERE but it can only be used if followed by a GROUP BY clause.
+
+# Creating passengers table
+Whenever there is more information that our project needs to store we should have a seperate 
+table for it so here we don't wanna put our passengers in the flights table so we are creating
+another table with passengers having unique id, name and a flight in which they will travel so
+for that we are referencing our flights table id using keyword REFERENCES.
