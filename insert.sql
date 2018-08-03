@@ -5,6 +5,8 @@ INSERT INTO flights (origin, destination, duration) VALUES ('Delhi', 'California
 INSERT INTO flights (origin, destination, duration) VALUES ('Palo Alto', 'Sydney', 600);
 INSERT INTO flights (origin, destination, duration) VALUES ('Mumbai', 'Delhi', 180);
 INSERT INTO flights (origin, destination, duration) VALUES ('Goa', 'Canberra', 300);
+INSERT INTO flights (origin, destination, duration) VALUES ('New Jersey', 'Canada', 300);
+INSERT INTO flights (origin, destination, duration) VALUES ('Kashnir', 'Mongolia', 300);
 
 
 INSERT INTO passengers (name, flight_id) VALUES ('Ethan', 1);
