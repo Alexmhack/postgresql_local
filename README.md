@@ -67,4 +67,6 @@ For more select command look at select.sql file
 We can also use greater than and smaller than symbols to get more filtered data for e.g.
 SELECT * FROM flights WHERE duration > 500;
 
-For more specific where filtering we can use the AND keyword in the WHERE clauses.
+For more specific where filtering we can use the AND keyword in the WHERE clauses, or we can use
+a clause with OR to fulfill either or both of the conditions.
+
