@@ -45,3 +45,14 @@ NOTE: \d is the command for getting the details of our table.
 # Inserting Into Table
 Inserting data into our table is just like creating except here we specify the values to be 
 inserted like the code in our file insert.sql
+
+# Selecting data from tables
+To access every row and column from table just mention it with a * like
+
+SELECT * FROM flights;
+
+NOTE: don't forget the semicolon at the end of the command.
+
+Basically it is very rare to get all the data stored in our database at once instead we want some
+filtered data and for that we can specify what we want when executing the SELECT statement, look 
+at the select.sql for more info.
