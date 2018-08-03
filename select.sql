@@ -43,3 +43,9 @@ SELECT * FROM flights ORDER BY duration ASC LIMIT 2;
 SELECT * FROM flights ORDER BY duration DESC;
 
 SELECT * FROM flights ORDER BY duration DESC LIMIT 2;
+
+SELECT origin, COUNT(*) FROM flights GROUP BY origin;
+
+SELECT origin, COUNT(*) FROM flights GROUP BY origin ORDER BY COUNT(*) ASC;
+
+SELECT origin, COUNT(*) FROM flights GROUP BY origin HAVING COUNT(*) > 1;

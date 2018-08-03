@@ -126,3 +126,9 @@ We can order our returned queryset by a particular column in our table for examp
 flights table we can get the flights in an ascending order by their duration.
 
 We can limit our queryset by saying give us the first 3 flights with least duration. 
+
+# Grouping querset
+Here we say to group by origin which means that all the rows from one origin will be grouped 
+together and so on.
+
+HAVING is same like WHERE but it can only be used if followed by a GROUP BY clause.
