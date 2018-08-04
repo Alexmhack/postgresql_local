@@ -170,4 +170,7 @@ makes this very simple.
 SELECT * FROM flights WHERE id IN 
 	(SELECT flight_id FROM passengers GROUP BY fligt_id HAVING COUNT(*) > 2);
 
-above query gets us the flights details (origin, destination, duration) if the flight has more than two passengers on it.
+above query gets us the flights details (origin, destination, duration) if the flight has more 
+than two passengers on it. Just break the query into two parts, the first says to get the 
+flights details for id in result of query, second query gets us the flight_id if flight has more 
+than two passengers on it, whose result is 4 so we are getting the flight details for just id = 4
