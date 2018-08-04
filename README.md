@@ -174,3 +174,7 @@ above query gets us the flights details (origin, destination, duration) if the f
 than two passengers on it. Just break the query into two parts, the first says to get the 
 flights details for id in result of query, second query gets us the flight_id if flight has more 
 than two passengers on it, whose result is 4 so we are getting the flight details for just id = 4
+
+# Running python to query database
+Python Module for working with database that we are going to use is sqlalchemy, so create a file 
+and import our modules.
