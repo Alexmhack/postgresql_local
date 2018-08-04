@@ -223,4 +223,5 @@ Once we have done this, we need a python dictionary which has key as the VALUE n
 destination, duration) and dict values as the values that we want to enter into the VALUES.
 
 Don't forget to commit the database once we have inserted our values, only after that our changes
-will be reflected
+will be reflected, We can also commit changes at last, sqlalchemy will store those changes at 
+commit them all together at last.
