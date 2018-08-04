@@ -203,3 +203,24 @@ this way we can execute sql queries just like our terminal.
 
 NOTE: the returned values from engine.execute is a iterable so we can use for loop to get all
 the data and also use dot notation to get specific columns from table.
+
+# Inserting data from files
+Suppose we have a large csv file which is in the order that we want which is 
+
+origin, destination, duration
+
+then we can just run a for loop for the whole file and start making insertions into our file.
+We have made inserting_csv_data.py in which we run make a reader from the csv module in python
+for handling csv file data, that reader has the columns in the sequence so we just run a for
+loop and insert data in our sql query
+
+The sql query for inserting external data is a little different. We need to tell db that we are 
+not yet entering the VALUES by placing a colon in front of the VALUE for example
+
+VALUES (:origin, :destination, :duration)
+
+Once we have done this, we need a python dictionary which has key as the VALUE name (origin, 
+destination, duration) and dict values as the values that we want to enter into the VALUES.
+
+Don't forget to commit the database once we have inserted our values, only after that our changes
+will be reflected
