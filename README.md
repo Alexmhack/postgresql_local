@@ -178,3 +178,28 @@ than two passengers on it, whose result is 4 so we are getting the flight detail
 # Running python to query database
 Python Module for working with database that we are going to use is sqlalchemy, so create a file 
 and import our modules.
+
+With the help of sqlalchemy we can access almost every database that exists today, we are going
+to access postgresql database that we have created so far. 
+
+First we need to create an engine for our postgresql and we can import that from sqlalchemy
+import create_engine, for creating engine we need to specify the path for our database which
+is as follows:
+
+engine = create_engine('postgresql://postgres:admin@localhost/postgres')
+
+create_engine is just a function from the module and it takes in the database url, here
+postgresql:// means we are telling to create an postgresql engine, postgres:admin means the
+user:password for our postgresql server and since our database exists in the local computer we
+tell that using the @localhost and then the name of the database inside our postgresql which is
+postgres
+
+Now we can access all the tables that are inside our database postgres which are namely flights 
+and passengers at the moment, so to execute queries we can,
+
+engine.execute("SELECT * FROM flights")
+
+this way we can execute sql queries just like our terminal.
+
+NOTE: the returned values from engine.execute is a iterable so we can use for loop to get all
+the data and also use dot notation to get specific columns from table.
