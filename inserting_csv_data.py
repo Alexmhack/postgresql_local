@@ -14,8 +14,8 @@ def main():
 		db.execute("INSERT INTO flights (origin, destination, duration) VALUES (:origin, :destination, :duration)",
 			{'origin': origin, 'destination': destination, 'duration': duration}
 		)
-		db.commit()
 		print(f"INSERTED:\n\t ORIGIN:{origin} DESTINATION: {destination} DURATION: {duration}")
+	db.commit()
 
 
 if __name__ == "__main__":
