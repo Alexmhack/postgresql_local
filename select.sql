@@ -76,3 +76,8 @@ SELECT name, origin, destination, duration FROM flights
 
 SELECT origin, destination, name FROM flights
 	RIGHT JOIN passengers ON passengers.flight_id = flights.id;
+
+SELECT flight_id FROM passengers GROUP BY flight_id HAVING COUNT(*) > 2;
+
+SELECT * FROM flights WHERE id IN
+	(SELECT flight_id FROM passengers GROUP BY flight_id HAVING COUNT(*) > 2);

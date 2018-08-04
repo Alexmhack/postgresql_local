@@ -160,3 +160,14 @@ reference in the right table, which can give us some empty values as well.
 
 Similarly there is RIGHT JOIN that includes all the rows from the right table even if it doesn't 
 have a match in the left table.
+
+# Nesting Queries
+Nesting SQL queries can be helpful when we want to operate secondary query on a result of a query
+itself, like if we want to know all the details of the flight which has more than one passenger 
+on it, this query is not possible without having to run two seperate queries but nesting queries 
+makes this very simple.
+
+SELECT * FROM flights WHERE id IN 
+	(SELECT flight_id FROM passengers GROUP BY fligt_id HAVING COUNT(*) > 2);
+
+above query gets us the flights details (origin, destination, duration) if the flight has more than two passengers on it.
