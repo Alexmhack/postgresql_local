@@ -157,3 +157,6 @@ id = 1 which will violate our passengers flight.
 We can also perform an JOIN known as the LEFT JOIN which joins the left table to the right and 
 what this does is get all the data we need from the left table whether or not the data has any
 reference in the right table, which can give us some empty values as well.
+
+Similarly there is RIGHT JOIN that includes all the rows from the right table even if it doesn't 
+have a match in the left table.

@@ -73,3 +73,6 @@ SELECT name, origin, destination, duration FROM flights
 
 SELECT name, origin, destination, duration FROM flights
 	LEFT JOIN passengers ON passengers.flight_id = flights.id;
+
+SELECT origin, destination, name FROM flights
+	RIGHT JOIN passengers ON passengers.flight_id = flights.id;
